@@ -1,17 +1,18 @@
-@media only screen and (max-width:767px) {
-    
-    html{
+@media(min-width:768px) {
+    html {
 
-        font-size: 12px;
+        font-size: 16px;
     }
 }
+
 body {
     margin: 0;
 }
-html{
-    
-    font-size: 16px;
+
+html {
+    font-size: 12px;
 }
+
 .container {
     height: 100vh;
     background-size: cover;
@@ -23,6 +24,7 @@ html{
     align-items: center;
     justify-content: center;
     position: relative;
+
 
 }
 
@@ -37,6 +39,8 @@ html{
 
 .kidokitlogo {
     fill: white;
+    size: 8rem;
+    margin-top: -47;
 }
 
 .layer {
@@ -80,6 +84,10 @@ html{
     color: #FFFFFF;
 }
 
+/* .buttonKayit{
+    padding: 100px 100px 100px 100px;
+} */
+
 .buttonKayit button {
     background-color: #FFFFFF;
     border-radius: 22px;
@@ -93,8 +101,10 @@ html{
     color: #735EBB;
     border: 0;
 }
-.buttonKayit a
-{ text-decoration: none;}
+
+.buttonKayit a {
+    text-decoration: none;
+}
 
 .hesapVarmi {
     font-family: 'DM Sans';
@@ -104,8 +114,12 @@ html{
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+    left: 100px;
+    top: 300px;
+    font-weight: lighter;
 }
-.giris{
+
+.giris {
     font-family: 'DM Sans';
     font-size: 27px;
     font-weight: 400;
@@ -113,5 +127,23 @@ html{
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
+/* .flex-container {
+    display: flex;
+}
+
+.kayitolfirstpart {
+    display: flex;
+} */
+
+.kayitolsecondpart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: baseline;
+}
