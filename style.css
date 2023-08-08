@@ -37,10 +37,9 @@ html {
     flex-direction: column;
 }
 
-.kidokitlogo {
-    fill: white;
+.kidokit_logo {
     size: 8rem;
-    margin-top: -47;
+    margin-bottom: 10rem;
 }
 
 .layer {
@@ -283,7 +282,7 @@ html {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    column-gap: normal  ;
+    column-gap: normal;
 }
 
 .kayitolcheckbox {
@@ -329,6 +328,16 @@ html {
 
 }
 
+.girisbody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    align-content: center;
+}
+
 .girisbaslik {
     font-family: 'DM Sans';
     font-size: 2.5rem;
@@ -337,9 +346,11 @@ html {
     letter-spacing: 0em;
     text-align: center;
     color: #8D75E0;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
 }
 
-.girisyapepostayazi {
+.girisepostayazi {
     font-family: 'DM Sans';
     font-size: 1.75rem;
     line-height: 2.25rem;
@@ -348,18 +359,27 @@ html {
     font-weight: bold;
 }
 
-.girisyapeposta {
-
-    border-radius: 6px;
-    width: 21.25rem;
-    height: 2.25rem;
-    border-color: #735EBB;
+.giriscenterpart {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
-.girisyapsifreyazi {
+
+.giriseposta {
+
+    width: 21.25rem;
+    height: 2.25rem;
+    border-radius: 6px;
+    border: 2px;
+    border-color: #E6E6E6;
+    border-style: solid;
+}
+
+.girissifreyazi {
     font-family: 'DM Sans';
     font-size: 1.75rem;
     line-height: 2.25rem;
@@ -368,18 +388,22 @@ html {
     font-weight: bold;
 }
 
-.girisyappassword {
+.girispassword {
 
-    border-radius: 6px;
     width: 21.25rem;
     height: 2.25rem;
-    border-color: #735EBB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 6px;
+    border: 2px;
+    border-color: #E6E6E6;
+    border-style: solid;
 }
 
-.girisyapsifreunuttum {
+.girissifreunuttum{
+    margin-left: 7rem;
+    margin-top: 1.50rem;
+}
+
+.girissifreunuttum a {
 
     font-family: 'DM Sans';
     font-size: 1rem;
@@ -390,8 +414,20 @@ html {
     text-decoration: none;
 }
 
-.girisyapentered {
-    text-decoration: none;
+.girisenteredbutton {
+    width: 240px; 
+    height:44px;
+    top: 682px;
+    left: 600px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    color: #FFFFFF;
+    background-color: #735EBB;
+    border: none;
+    margin-top: 4.50rem;
+
+
 }
 
 .sifresifirlamacontainer {
@@ -411,6 +447,8 @@ html {
     font-family: 'DM Sans';
     font-size: 2.5rem;
     line-height: 3.25rem;
+    margin-top: 60px;
+    margin-bottom: 50px;
 
 }
 
@@ -421,5 +459,255 @@ html {
     line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.sifresifirlamainput {
+    width: 343px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px;
+    border-color: #E6E6E6;
+    border-style: solid;
+    margin-top: 50px;
+}
+
+.sifresifirlamabutton {
+    width: Fixed (171px);
+    height: Hug (44px);
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    opacity: 0.4000000059604645px;
+    background-color: #735EBB;
+    border-style: none;
+    margin-top: 55px;
+}
+
+.sifresifirlamabuttontext {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+
+}
+
+.sifresifirGirisYapcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 12rem;
+
+}
+
+.sifresifirGirisYaptitle {
+    font-family: 'DM Sans';
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #8D75E0;
+}
+
+.sifresifirGirisYapsentences {
+    font-family: 'DM Sans';
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    color: #173627;
+}
+
+.sifresifirGirisYapinputs {
+    width: 500px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px;
+    border-color: #E6E6E6;
+    border-style: solid;
+
+}
+
+.sifresifirGirisYapsecondpart {
+    margin-top: 3.50rem;
+}
+
+.sifresifirGirisYapbutton {
+    width: Fixed (171px);
+    height: Hug (44px);
+    top: 662px;
+    left: 634px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    background-color: #735EBB;
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-style: hidden;
+    margin-top: 5rem;
+
+
+}
+
+.sifirlamaHatabody {
+    background-color: #2e383c;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sifirlamaHatacontent {
+
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 550px;
+    top: 228px;
+    left: 442px;
+    border-radius: 22px;
+    margin: 150 200 100 600;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.sifirlamaHataicon {
+    margin-left: 9.25rem;
+    margin-bottom: 4rem;
+    margin-top: auto;
+
+}
+
+.sifirlamaHatatitle {
+    font-family: 'DM Sans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #EC4F4F;
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+}
+
+.sifirlamaHatasentences {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.sifirlamaHatabutton {
+    width: Fixed (171px);
+    height: Hug (44px);
+    top: 662px;
+    left: 634px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    background-color: #735EBB;
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-style: hidden;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.sifirlamaBasarilibody {
+    background-color: #2e383c;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sifirlamaBasarilicontent {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 550px;
+    top: 228px;
+    left: 442px;
+    border-radius: 22px;
+    margin: 150 200 100 600;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sifirlamaBasariliicon {
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.sifirlamaBasarilititle {
+    font-family: 'DM Sans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3CD77A;
+    margin-left: 0;
+
+}
+
+.sifirlamaBasarilisentences {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.sifirlamaBasarilibutton {
+    width: Fixed (171px);
+    height: Hug (44px);
+    top: 662px;
+    left: 634px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    background-color: #735EBB;
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-style: hidden;
+    margin-left: 4.50rem;
+    margin-top: 4rem;
 }
