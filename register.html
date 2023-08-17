@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kayıt Ol</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <div id="registercontent" class="registercontentpart">
+            <h1 class="registertitle">Kayıt Olun</h1>
+            <div class="registerposition">
+                <div class="w-50">
+                    <label class="registerlabel " for="registernamesurnameinput"> Adınız ve Soyadınız </label>
+                    <input type="text" class="registerinput">
+                </div>
+
+                <div class="w-50">
+                    <label class="registerlabel " for="registeremailinput"> E-posta adresinizi yazınız </label>
+                    <input type="email" class="registerinput">
+                </div>
+            </div>
+
+            <div class="registerposition">
+                <div class="w-50">
+                        <label class="registerlabel " for="registerpasswordinput">Bir şifre belirleyiniz</label>
+                        <input type="password" class="registerinput">
+                        <div class="registerpasswordvalidation">
+                            <ul>
+                                <li>8 ila 30 karakterden oluşmalı.</li>
+                                <li>En az 1 tane rakam bulunmalı.</li>
+                                <li>En az 1 tane özel karakter bulunmalı (örneğin !#$&+).</li>
+                                <li>En az 1 tane büyük harf bulunmalı.</li>
+                            </ul>
+                        </div>
+                    
+                        
+
+
+                </div>
+
+                <div class="w-50">
+
+                        <label class="registerlabel " for="registerpasswordagaininput"> Bir şifre belirleyiniz</label>
+                        <input type="password" class="registerinput">
+                    <div class="registerpasswordvalidation">
+                        <ul>
+                            <li>8 ila 30 karakterden oluşmalı.</li>
+                            <li>En az 1 tane rakam bulunmalı.</li>
+                            <li>En az 1 tane özel karakter bulunmalı (örneğin !#$&+).</li>
+                            <li>En az 1 tane büyük harf bulunmalı.</li>
+                        </ul>
+                     </div>
+
+                </div>
+
+            </div>
+            <div class="registerposition">
+
+                <div class="w-50">
+                    <label class="registerlabel " for="registerchildnameinput"> Çocuğun ismi? </label>
+                    <input type="text" class="registerinput">
+                </div>
+
+                <div class="w-50">
+                    <label class="registerlabel " for="registerchildbdayinput"> Çocuğun Doğum Tarihi?</label>
+                    <input type="date" class="registerinput" placeholder="Seçiniz">
+                </div>
+
+            </div>
+
+
+            <div class="registerposition">
+
+                <div class="w-50">
+                    <label class="registerlabel " for="registerchildgenderinput"> Çocuğunuzun Cinsiyeti? </label>
+                    <div class="registerchidgenderbutton">
+                        <input type="button" class="registerchidgenderbutton" value="Erkek">
+                        <input type="button" class="registerchidgenderbutton" value="Kız">
+                    </div>
+                </div>
+                <div class="w-50">
+                    <span class="registernewchild"><img src="error_purple.svg" id="register_error">Kayıt sonrası yeni çocuk kayıtları oluşturabilirsiniz.</span>
+                </div>
+            </div>
+
+            <div class="registerfifthpart">
+                <input type="checkbox" >
+                <span class="registertermsofusetext">Kullanım Koşullarını ve Gizlilik Sözleşmesini</span>
+                 <span class="registerreadaccept">okudum, kabul ediyorum.</span>
+
+            </div>
+
+            <div id="registersixthpart">
+
+                <input type="button" class="registerbutton" value="Kayıt Ol">
+
+            </div> 
+        </div>
+
+    </form>
+
+
+
+
+</body>

@@ -1,34 +1,20 @@
-@media(min-width:768px) {
-    html {
-
-        font-size: 16px;
-    }
-}
-
-body {
+* {
     margin: 0;
+    padding: 0;
 }
 
-html {
-    font-size: 12px;
-}
+/* INDEX BEGIN */
 
-.container {
-    height: 100vh;
+.indexfirstpart {
+    background-image: url(./backgroundbabynew.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    background-image: url(backgroundbaby.jpg);
-    background-repeat: no-repeat;
+    background-repeat: space;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-
+    height: 100vh;
 }
 
-.bluelayer {
+.indexopacitybluelayer {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -37,23 +23,16 @@ html {
     flex-direction: column;
 }
 
-.kidokit_logo {
-    size: 8rem;
-    margin-bottom: 10rem;
-}
-
-.layer {
+.indexbluelayercontent {
     background: linear-gradient(180deg, rgba(84, 217, 213, 0.35) 0%, #0B2C2B 100%);
     height: 100vh;
     background-size: cover;
-    z-index: 0;
     background-position: center;
     position: absolute;
-    top: 0;
     width: 100%;
 }
 
-.content {
+.indexcontainerpart {
     z-index: 2;
     display: flex;
     align-items: center;
@@ -61,51 +40,56 @@ html {
     flex-direction: column;
 }
 
-.welcome {
-    color: #FFFFFF;
+.indexlogo {
+
+    size: 8rem;
+    margin-bottom: 10rem;
+}
+
+#indexwelcome {
     font-family: 'DM Sans';
-    font-size: 2.5rem;
+    font-weight: lighter;
+    font-size: 39px;
     font-weight: 700;
-    line-height: 3rem;
+    line-height: 51px;
     letter-spacing: 0em;
     text-align: center;
-
+    color: #FFFFFF;
 
 }
 
-.sentences {
+#indexsentencescontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'DM Sans';
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 1px;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+
+
 }
 
-/* .buttonKayit{
-    padding: 100px 100px 100px 100px;
-} */
-
-.buttonKayit button {
-    background-color: #FFFFFF;
+#indexbutton {
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    width: 232px;
+    height: 68px;
+    top: 519px;
+    left: 581px;
     border-radius: 22px;
-    font-family: 'DM Sans';
+    color: #735EBB;
+    font-family: DM Sans;
     font-size: 30px;
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: center;
-    padding: 20px 40px;
-    color: #735EBB;
-    border: 0;
 }
 
-.buttonKayit a {
-    text-decoration: none;
-}
-
-.hesapVarmi {
+#indexloginsentence {
     font-family: 'DM Sans';
     font-size: 27px;
     font-weight: 700;
@@ -118,7 +102,7 @@ html {
     font-weight: lighter;
 }
 
-.giris {
+#indexloginlink {
     font-family: 'DM Sans';
     font-size: 27px;
     font-weight: 400;
@@ -130,472 +114,330 @@ html {
     font-weight: bolder;
 }
 
-.flex-container {
+/* INDEX END */
+
+
+
+
+/* REGISTER BEGIN */
+.registercontentpart {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 28px;
+    max-width: 900px;
+    padding: 80px 20px;
+    margin: auto;
+   
 }
 
-.kayitoltitle {
+.registertitle {
     font-family: 'DM Sans';
-    font-size: 2.50rem;
+    font-size: 40px;
     font-weight: 700;
     line-height: 51px;
     letter-spacing: 0em;
     text-align: center;
     color: #8D75E0;
+    column-gap: 47px;
+}
+
+.registerlabel {
+    color: #173627;
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
 
 }
 
-.kayitolfirstpart {
+.registerinput {
+    width: 343px;
+    height: 44px;
+    border-radius: 12px;
+    border: 2px;
+    border-color: #E6E6E6;
+    border-style: solid;
 
+}
+
+.registerposition {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 100px;
+    align-items: baseline;
 }
 
-.kayitoltexttitle {
+.registerpasswordvalidation {
     font-family: 'DM Sans';
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #173627;
-}
-
-.kayitolnamesurnametext {
-    width: 21rem;
-    height: 2.5rem;
-    border: 2px;
-    border-color: #735EBB;
-    border-style: solid;
-    border-radius: 0.75rem;
-}
-
-.kayitolepostatext {
-    width: 21rem;
-    height: 2.5rem;
-    border: 2px;
-    border-color: #735EBB;
-    border-style: solid;
-    border-radius: 0.75rem;
-}
-
-.kayitolsecondpart {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 8rem;
-}
-
-
-.kayitolpassword {
-    width: 21rem;
-    height: 2.5rem;
-    border: 2px;
-    border-color: #735EBB;
-    border-style: solid;
-    border-radius: 0.75rem;
-
-}
-
-.kayitolpasswordconditinal {
-    font-family: 'DM Sans';
-    font-size: 0.75rem;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 1rem;
+    line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-
+    color: #000000;
 }
 
-.kayitolthirdpart {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 8rem;
+.registerpasswordvalidation ul {
+    list-style: none;
 }
 
-.kayitolchildname {
-    width: 21rem;
-    height: 2.5rem;
-    border: 2px;
-    border-color: #735EBB;
-    border-style: solid;
-    border-radius: 0.75rem;
-}
-
-.kayitolchildbirthday {
-    width: 21rem;
-    height: 2.5rem;
-    border: 2px;
-    border-color: #735EBB;
-    border-style: solid;
-    border-radius: 0.75rem;
-}
-
-.kayitolfourthpart {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.kayitolbutton {
-
-    width: 52px;
+.registerchidgenderbutton {
+    width: 65px;
     height: 44px;
-    border: 2px;
+    top: 705px;
+    left: 288px;
+    padding: 0px 16px 0px 16px;
     border-radius: 8px;
-    color: #FFFFFF;
+    border: 1px;
+    border-style: solid;
+    gap: 10px;
     border-color: #E6E6E6;
+    background-color: #FFFFFF;
 
 }
 
-.kayitoltextnewchild {
+.registernewchild {
     font-family: 'DM Sans';
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    display: flex;
-    flex-direction: row;
-    column-gap: 1rem;
-    justify-content: flex-start;
-    align-items: center;
 
 }
 
-.kayitolfifthpart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    column-gap: normal;
-}
-
-.kayitolcheckbox {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.25rem;
-
-}
-
-.kayitoltermsofusetext {
+.registertermsofusetext {
     font-family: 'DM Sans';
-    font-size: 1.50rem;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 1.75rem;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
     color: #826BD0;
 
 }
 
-.kayitolreadaccept {
+.registerreadaccept {
+
     font-family: 'DM Sans';
-    font-size: 1.25rem;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.75rem;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
     color: #826BD0;
 
 }
 
-.kayitolenterbutton {
-    width: Fixed (280px);
-    height: Hug (44px);
+.registerbutton {
+    width: 240px;
+    height: 44px;
     top: 887px;
     left: 569px;
     padding: 10px 32px 10px 32px;
     border-radius: 22px;
     gap: 10px;
-    color: #FFFFFF;
     background-color: #735EBB;
-    border: none;
+    color: #FFFFFF;
+    border-style: hidden;
 
 }
 
-.girisbody {
+.w-50{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+
+/* REGISTER END */
+
+
+
+/* LOGIN BEGIN */
+
+.logincontentpart {
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 3rem;
     align-content: center;
-}
-
-.girisbaslik {
-    font-family: 'DM Sans';
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #8D75E0;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
-}
-
-.girisepostayazi {
-    font-family: 'DM Sans';
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    letter-spacing: 0em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.giriscenterpart {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-}
-
-
-.giriseposta {
-
-    width: 21.25rem;
-    height: 2.25rem;
-    border-radius: 6px;
-    border: 2px;
-    border-color: #E6E6E6;
-    border-style: solid;
-}
-
-.girissifreyazi {
-    font-family: 'DM Sans';
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    letter-spacing: 0em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.girispassword {
-
-    width: 21.25rem;
-    height: 2.25rem;
-    border-radius: 6px;
-    border: 2px;
-    border-color: #E6E6E6;
-    border-style: solid;
-}
-
-.girissifreunuttum{
-    margin-left: 7rem;
-    margin-top: 1.50rem;
-}
-
-.girissifreunuttum a {
-
-    font-family: 'DM Sans';
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #173627;
-    text-decoration: none;
-}
-
-.girisenteredbutton {
-    width: 240px; 
-    height:44px;
-    top: 682px;
-    left: 600px;
-    padding: 10px 32px 10px 32px;
-    border-radius: 22px;
-    gap: 10px;
-    color: #FFFFFF;
-    background-color: #735EBB;
-    border: none;
-    margin-top: 4.50rem;
-
-
-}
-
-.sifresifirlamacontainer {
-    text-align: center;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 6rem;
+
 }
 
-.sifresifirlamatitle {
-    text-align: center;
-    /* width: 22rem; */
-    height: 3.25rem;
-    color: #8D75E0;
+#logintitle {
     font-family: 'DM Sans';
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    margin-top: 60px;
-    margin-bottom: 50px;
-
-}
-
-.sifresifirlamasentence {
-    font-family: 'DM Sans';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sifresifirlamainput {
-    width: 343px;
-    height: 44px;
-    border-radius: 12px;
-    border: 1px;
-    border-color: #E6E6E6;
-    border-style: solid;
-    margin-top: 50px;
-}
-
-.sifresifirlamabutton {
-    width: Fixed (171px);
-    height: Hug (44px);
-    padding: 10px 32px 10px 32px;
-    border-radius: 22px;
-    gap: 10px;
-    opacity: 0.4000000059604645px;
-    background-color: #735EBB;
-    border-style: none;
-    margin-top: 55px;
-}
-
-.sifresifirlamabuttontext {
-    font-family: 'DM Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-
-
-}
-
-.sifresifirGirisYapcontainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    margin-top: 12rem;
-
-}
-
-.sifresifirGirisYaptitle {
-    font-family: 'DM Sans';
-    font-size: 2rem;
+    font-size: 39px;
     font-weight: 700;
     line-height: 51px;
     letter-spacing: 0em;
     text-align: center;
     color: #8D75E0;
+
 }
 
-.sifresifirGirisYapsentences {
+.logincontentpositon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+
+
+.loginlabel {
     font-family: 'DM Sans';
-    font-size: 2rem;
+    font-size: 27px;
     font-weight: 700;
-    line-height: 1.25rem;
+    line-height: 35px;
     letter-spacing: 0em;
+    text-align: left;
     color: #173627;
 }
 
-.sifresifirGirisYapinputs {
-    width: 500px;
+.logininput {
+    width: 343px;
     height: 44px;
     border-radius: 12px;
-    border: 1px;
-    border-color: #E6E6E6;
+    border: 2px;
+    color: #E6E6E6;
     border-style: solid;
-
 }
 
-.sifresifirGirisYapsecondpart {
-    margin-top: 3.50rem;
-}
-
-.sifresifirGirisYapbutton {
-    width: Fixed (171px);
-    height: Hug (44px);
-    top: 662px;
-    left: 634px;
-    padding: 10px 32px 10px 32px;
-    border-radius: 22px;
-    gap: 10px;
-    background-color: #735EBB;
-    color: #FFFFFF;
+#loginforgetpasswordlink {
+    text-decoration: none;
+    color: #173627;
     font-family: 'DM Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
-    border-style: hidden;
-    margin-top: 5rem;
+    text-align: center;
 
 
 }
 
-.sifirlamaHatabody {
-    background-color: #2e383c;
-    position: relative;
-    overflow: hidden;
-
+.loginsecondpart {
+    text-align: center;
 }
 
-.sifirlamaHatacontent {
-
-    background-color: #FFFFFF;
-    width: 500px;
-    height: 550px;
-    top: 228px;
-    left: 442px;
-    border-radius: 22px;
-    margin: 150 200 100 600;
+.loginthirdpart {
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    ;
+}
+
+.loginbutton {
+    width: 150px;
+    height: Hug (44px);
+    top: 591px;
+    left: 607px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    border-style: hidden;
+    color: #FFFFFF;
+    background-color: #735EBB;
 
 }
 
-.sifirlamaHataicon {
-    margin-left: 9.25rem;
-    margin-bottom: 4rem;
-    margin-top: auto;
+/* LOGIN END */
 
+
+/* PASSWORDRESET BEGIN */
+
+.passwordresetcontentpart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
 }
 
-.sifirlamaHatatitle {
+.passwordresetcontentemail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* PASSWORDRESET END */
+
+/* EMAILRESET */
+
+.emailresetbody {
+    background-color: #181C1E;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.emailresetcontent {
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 500px;
+    top: 228px;
+    left: 442px;
+    border-radius: 22px;
+    margin-top: 75px;
+}
+
+.emailresetposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailreseterrorsentence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailresetbutton {
+    width: 150px;
+    height: Hug (44px);
+    top: 591px;
+    left: 607px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 22px;
+    gap: 10px;
+    border-style: hidden;
+    color: #FFFFFF;
+    background-color: #735EBB
+}
+
+
+/* EMAILRESET */
+
+
+
+
+/* EMAILRESETERROR BEGIN */
+
+#emailreseterrortitle {
     font-family: 'DM Sans';
     font-size: 30px;
     font-weight: 700;
@@ -603,73 +445,54 @@ html {
     letter-spacing: 0em;
     text-align: center;
     color: #EC4F4F;
-    margin-top: 0;
-    margin-bottom: 3rem;
 
 }
 
-.sifirlamaHatasentences {
+.emailreseterrorsentence {
     font-family: 'DM Sans';
     font-size: 18px;
     font-weight: 400;
-    line-height: 10px;
+    line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
+    color: #000000;
+    font-size: small;
 
 }
 
-.sifirlamaHatabutton {
-    width: Fixed (171px);
-    height: Hug (44px);
-    top: 662px;
-    left: 634px;
-    padding: 10px 32px 10px 32px;
-    border-radius: 22px;
-    gap: 10px;
-    background-color: #735EBB;
-    color: #FFFFFF;
-    font-family: 'DM Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    border-style: hidden;
-    margin-left: 4rem;
-    margin-bottom: 4rem;
-    margin-top: 1rem;
-}
+/* EMAILRESETERROR END */
 
-.sifirlamaBasarilibody {
-    background-color: #2e383c;
-    position: relative;
-    overflow: hidden;
 
-}
 
-.sifirlamaBasarilicontent {
-    background-color: #FFFFFF;
-    width: 500px;
-    height: 550px;
-    top: 228px;
-    left: 442px;
-    border-radius: 22px;
-    margin: 150 200 100 600;
+/* EMAILRESETSUCCESS BEGIN */
+
+.emailresetbody {
+    background-color: #181C1E;
+    background-color: rgba(0, 0, 0, 0.7);
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: center;
     align-items: center;
 }
 
-.sifirlamaBasariliicon {
-    margin-left: 11rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
+.emailresetcontent {
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 500px;
+    top: 228px;
+    left: 442px;
+    border-radius: 22px;
+    margin-top: 75px;
 }
 
-.sifirlamaBasarilititle {
+.emailresetposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#emailresetsuccesstitle {
     font-family: 'DM Sans';
     font-size: 30px;
     font-weight: 700;
@@ -677,21 +500,123 @@ html {
     letter-spacing: 0em;
     text-align: center;
     color: #3CD77A;
-    margin-left: 0;
 
 }
 
-.sifirlamaBasarilisentences {
+.emailresetsuccesscontentsentences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-family: 'DM Sans';
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
+    font-size: small;
     letter-spacing: 0em;
     text-align: center;
+    color: #000000;
 
 }
 
-.sifirlamaBasarilibutton {
+
+/* EMAILRESETSUCCESS END */
+
+
+
+
+
+/* NEWPASSWORDRESET BEGIN */
+
+#newpasswordresetcontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.passwordtitle {
+    color: #8D75E0;
+    font-family: 'DM Sans';
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* NEWPASSWORDRESETFIRSTCONTENT */
+#newpasswordresetfirstcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+.passwordlabel {
+    color: #173627;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.passwordinput {
+    width: 343px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px;
+    color: #E6E6E6;
+    border-style: solid;
+}
+
+.passwordinput::placeholder {
+    color: rgba(23, 54, 39, 0.5);
+    opacity: 0.50;
+}
+
+/* NEWPASSWORDRESETFIRSTCONTENT */
+
+/* NEWPASSWORDRESETSECONDCONTENT */
+
+
+#newpasswordresetsecondcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+#newpasswordresetagaininput :placeholder {
+    color: #17362780;
+    opacity: 50px;
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* NEWPASSWORDRESETSECONDCONTENT */
+
+
+/* NEWPASSWORDRESETSECONDPART */
+
+.passwordbutton {
+
+    color: #FFFFFF;
     width: Fixed (171px);
     height: Hug (44px);
     top: 662px;
@@ -699,15 +624,12 @@ html {
     padding: 10px 32px 10px 32px;
     border-radius: 22px;
     gap: 10px;
-    background-color: #735EBB;
-    color: #FFFFFF;
-    font-family: 'DM Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+    opacity: 0.4000000059604645px;
     border-style: hidden;
-    margin-left: 4.50rem;
-    margin-top: 4rem;
+    background-color: #735EBB;
 }
+
+
+/* NEWPASSWORDRESETSECONDPART */
+
+/* NEWPASSWORDRESET END */
